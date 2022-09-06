@@ -1,0 +1,27 @@
+<h1 class = "mt-4">Lista de Artigos</h1>
+<ol class="breadcrumb mb-4">
+    <li class="bradcrumb-item active"> Autor, título e descrição</li>
+</ol>
+<br />
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Autor</th>
+          <th>título</th>
+          <th>descrição</th>
+          <td ></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let x of arq">
+          <td >{{x.author}}</td>
+          <td >{{x.title}}</td>
+          <td >{{x.description}}</td>
+          <td ></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
